@@ -1,0 +1,52 @@
+Mono path[0] = 'C:/Users/shiba/Desktop/Takaya/unity/Takaya_Data/Managed'
+Mono path[1] = 'C:/Users/shiba/Desktop/Takaya/unity/Takaya_Data/Mono'
+Mono config path = 'C:/Users/shiba/Desktop/Takaya/unity/Takaya_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/shiba/Desktop/Takaya/unity/Takaya_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55309
+Multi-casting "[IP] 192.168.1.158 [Port] 55309 [Flags] 2 [Guid] 3199180344 [EditorId] 4277316426 [Version] 1048832 [Id] WindowsPlayer(CUDA) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [192.168.1.158:55309]
+Initialize engine version: 5.1.2f1 (afd2369b692a)
+[VRDevice] Successfully created device oculus.
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX TITAN Black (ID=0x100c)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\shiba\Desktop\Takaya\unity\Takaya_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\shiba\Desktop\Takaya\unity\Takaya_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\shiba\Desktop\Takaya\unity\Takaya_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\shiba\Desktop\Takaya\unity\Takaya_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\shiba\Desktop\Takaya\unity\Takaya_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\shiba\Desktop\Takaya\unity\Takaya_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\shiba\Desktop\Takaya\unity\Takaya_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\shiba\Desktop\Takaya\unity\Takaya_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\shiba\Desktop\Takaya\unity\Takaya_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\shiba\Desktop\Takaya\unity\Takaya_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\shiba\Desktop\Takaya\unity\Takaya_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\shiba\Desktop\Takaya\unity\Takaya_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\shiba\Desktop\Takaya\unity\Takaya_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\shiba\Desktop\Takaya\unity\Takaya_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.044 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\shiba\Desktop\Takaya\unity\Takaya_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\shiba\Desktop\Takaya\unity\Takaya_Data\Managed\System.dll (this message is harmless)
+[Compositor] ERROR: Compositor failed to initialize.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/VR/Oculus/VRDeviceOculus.cpp Line: 54)
+
+Bad config or LibOVR not found. VR disabled.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/VR/Oculus/VRDeviceOculus.cpp Line: 368)
+
+Could not set Oculus caps. VR disabled.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/VR/Oculus/VRDeviceOculus.cpp Line: 940)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 21f4 -> priority: 1 
+  Thread -> id: 296c -> priority: 1 
