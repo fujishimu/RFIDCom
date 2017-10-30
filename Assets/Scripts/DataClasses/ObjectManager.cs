@@ -56,6 +56,9 @@ public class ObjectManager {
 		if (sceneName == "MusicRoomScene") {
 			InitForMusicRoomScene ();
 		}
+		if (sceneName == "ComScene") {
+			InitForComScene ();
+		}
 	}
 
 	private void InitForFurnitureScene () {
@@ -87,6 +90,12 @@ public class ObjectManager {
 		_objectDic.Add ("E007A200000017C5R", Resources.Load ("Prefabs/DrumSet") as GameObject);
 		_debugObj = Resources.Load("Prefabs/Cube") as GameObject;
 		_debugObjR = Resources.Load("Prefabs/CubeR") as GameObject;
+	}
+
+	private void InitForComScene () {
+		Debug.Log ("InitForComScene()");
+		_objectDic.Add ("E007A200000017B9", Resources.Load ("Prefabs/ComScene/Player1") as GameObject);
+		_objectDic.Add ("E007A200000017C5", Resources.Load ("Prefabs/ComScene/Player2") as GameObject);
 	}
 
 	public GameObject GetFurnitureByKey(string _key) {

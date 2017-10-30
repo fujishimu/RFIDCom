@@ -10,6 +10,7 @@ public class CameraManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        /*
 		if(Input.GetKey(KeyCode.RightArrow))
 		{
 			this.transform.GetChild(5).gameObject.transform.Rotate(new Vector3(0,0.3f,0));
@@ -31,6 +32,7 @@ public class CameraManager : MonoBehaviour {
 			this.transform.GetChild(5).gameObject.transform.rotation = Quaternion.Euler(new Vector3(0,0,0));
 			this.transform.GetChild(5).GetChild(0).gameObject.transform.rotation = Quaternion.Euler(new Vector3(0,0,0));
 		}
+		*/
 	}
 
 	public void ChangeCamera()
