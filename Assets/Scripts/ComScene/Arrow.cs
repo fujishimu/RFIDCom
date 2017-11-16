@@ -14,14 +14,15 @@ public class Arrow : MonoBehaviour {
 	{
         if (col.tag == "PlayerArrow")
         {
-			if(player.GetComponent<PlayerManager>().getState() != 1)player.GetComponent<PlayerManager> ().SpineState(1);
+			if(player.GetComponent<Player>().getState() != 1)player.GetComponent<Player> ().SpineState(1);
         }
     }
 	void OnTriggerExit(Collider col) 
 	{
 		if (col.tag == "PlayerArrow")
 		{
-			player.GetComponent<PlayerManager> ().SpineState(0);	
+			player.GetComponent<Player> ().SpineState(0);	
 		}
 	}
+
 }

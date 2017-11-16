@@ -69,6 +69,8 @@ namespace Vr_rfid
 			if (Input.GetKeyDown (KeyCode.Space)) {
 				cameraManager.ChangeCamera ();
 			}
+
+
 		}
 
 		/// <summary>
@@ -134,5 +136,8 @@ namespace Vr_rfid
 			_addFunction = true;
 			isUdpReceived = true;
 		}
+
+		//<summary>
+		//</summary>
 	}
 }

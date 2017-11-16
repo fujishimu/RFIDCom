@@ -59,6 +59,9 @@ public class ObjectManager {
 		if (sceneName == "ComScene") {
 			InitForComScene ();
 		}
+		if (sceneName == "ComScene2") {
+			InitForComScene ();
+		}
 	}
 
 	private void InitForFurnitureScene () {
@@ -94,8 +97,20 @@ public class ObjectManager {
 
 	private void InitForComScene () {
 		Debug.Log ("InitForComScene()");
-		_objectDic.Add ("E007A200000017B9", Resources.Load ("Prefabs/ComScene/Player1") as GameObject);
-		_objectDic.Add ("E007A200000017C5", Resources.Load ("Prefabs/ComScene/Player2") as GameObject);
+		//_objectDic.Add ("E007A200000017B9", Resources.Load ("Prefabs/ComScene/Player1") as GameObject);
+		//_objectDic.Add ("E007A200000017C5", Resources.Load ("Prefabs/ComScene/Player2") as GameObject);
+
+		_objectDic.Add ("E007A200000017BC",  Resources.Load ("Prefabs/GuitarWithAmp") as GameObject);
+		_objectDic.Add ("E007A200000017BCR", Resources.Load ("Prefabs/GuitarWithAmp") as GameObject);
+
+		_objectDic.Add ("E007A200000017B9",  Resources.Load ("Prefabs/ComScene/Player1") as GameObject);
+		_objectDic.Add ("E007A200000017B9R", Resources.Load ("Prefabs/ComScene/Player1") as GameObject);
+		_objectDic.Add ("E007A200000017C5",  Resources.Load ("Prefabs/ComScene/Player1") as GameObject);
+		_objectDic.Add ("E007A200000017C5R", Resources.Load ("Prefabs/ComScene/Player1") as GameObject);
+		//_objectDic.Add ("E007A200000017C5",  Resources.Load ("Prefabs/ComScene/Player2") as GameObject);
+		//_objectDic.Add ("E007A200000017C5R", Resources.Load ("Prefabs/ComScene/Player2") as GameObject);
+		_debugObj = Resources.Load("Prefabs/Cube") as GameObject;
+		_debugObjR = Resources.Load("Prefabs/CubeR") as GameObject;
 	}
 
 	public GameObject GetFurnitureByKey(string _key) {

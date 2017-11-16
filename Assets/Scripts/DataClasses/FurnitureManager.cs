@@ -51,17 +51,19 @@ public class FurnitureManager : MonoBehaviour {
 	/// </summary>
 	private void CreateFurniture (TagData tagData) {
 		GameObject _f;
-		if (tagData.IsSurface) {
+
+		if (tagData.IsSurface) { 
 			if (isDebugMode) {
 				_f = Instantiate (ObjectManager.Instance.DebugObjectR, matrixPosition, Quaternion.identity) as GameObject;
 			} else {
-				_f = Instantiate (ObjectManager.Instance.GetFurnitureByKey (tagData.UID + "R"), matrixPosition, Quaternion.identity) as GameObject;
+				_f = Instantiate (ObjectManager.Instance.GetFurnitureByKey (tagData.UID + "R"), matrixPosition, Quaternion.identity) as GameObject;	
 			}
 		} else {
 			if (isDebugMode) {
 				_f = Instantiate (ObjectManager.Instance.DebugObject, matrixPosition, Quaternion.identity) as GameObject;
 			} else {
 				_f = Instantiate (ObjectManager.Instance.GetFurnitureByKey (tagData.UID), matrixPosition, Quaternion.identity) as GameObject;
+			
 			}
 		}
 		_f.GetComponent<Furniture> ().Rotation = (float)tagData.Rotate;
