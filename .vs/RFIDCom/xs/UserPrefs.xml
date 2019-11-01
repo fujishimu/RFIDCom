@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{2EBC26D2-D69F-2DCA-55B2-8BED1A5387C5}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ComScene/ABPlayerManager.cs">
+    <Files>
+      <File FileName="Assets/Scripts/ComScene/ABPlayerManager.cs" Line="14" Column="35" />
+      <File FileName="Assets/Scripts/DataClasses/ObjectManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/DataClasses/FurnitureManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ComScene/Player.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ComScene/Arrow.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.RFIDCom PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,242 @@
+{
+"skeleton": { "hash": "mhHHGnOpGhO4ouBMstFMWSESPBw", "spine": "3.6.53", "width": 202.45, "height": 529.45, "images": "" },
+"bones": [
+	{ "name": "root", "scaleX": -0.914, "scaleY": 1.23 },
+	{ "name": "head", "parent": "root", "x": -5.62, "y": -10.15 },
+	{ "name": "leg1", "parent": "root", "x": -31.99, "y": -102.45 },
+	{ "name": "leg2", "parent": "root", "x": 41.83, "y": -84.15 }
+],
+"slots": [
+	{ "name": "player-leg1", "bone": "leg1", "attachment": "player-leg1" },
+	{ "name": "player-leg2", "bone": "leg2", "attachment": "player-leg2" },
+	{ "name": "player-head", "bone": "head", "attachment": "player-head" }
+],
+"skins": {
+	"default": {
+		"player-head": {
+			"player-head": { "x": 7.22, "y": 3.58, "width": 211, "height": 245 }
+		},
+		"player-leg1": {
+			"player-leg1": { "x": -24.18, "y": -75.91, "rotation": -0.68, "width": 114, "height": 184 }
+		},
+		"player-leg2": {
+			"player-leg2": { "x": -6.24, "y": -97.58, "rotation": -0.68, "width": 140, "height": 264 }
+		}
+	}
+},
+"events": {
+	"Jump": {},
+	"WalkOnGround": {}
+},
+"animations": {
+	"Climb": {
+		"bones": {
+			"head": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -54.22, "curve": "stepped" },
+					{
+						"time": 0.7667,
+						"x": 0,
+						"y": -54.22,
+						"curve": [ 0.141, 0, 0, 1.1 ]
+					},
+					{
+						"time": 1.5333,
+						"x": 0,
+						"y": 10.5,
+						"curve": [ 0.54, 0.03, 0.84, 1.91 ]
+					},
+					{ "time": 2.5, "x": 0, "y": -54.22 }
+				]
+			},
+			"leg2": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{
+						"time": 0.7667,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.07, 1.02 ]
+					},
+					{
+						"time": 1.5333,
+						"angle": 16.5,
+						"curve": [ 0.317, 0, 0.75, 1 ]
+					},
+					{ "time": 2.5, "angle": 0 }
+				]
+			},
+			"leg1": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{
+						"time": 0.7667,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.07, 1.02 ]
+					},
+					{
+						"time": 1.5333,
+						"angle": 25.5,
+						"curve": [ 0.25, 0, 0.18, 1 ]
+					},
+					{ "time": 2.5, "angle": 0 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.7667, "name": "Jump" }
+		]
+	},
+	"Idle": {
+		"bones": {
+			"head": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 8.0E-4, "x": 0, "y": 0 },
+					{ "time": 0.1, "x": 0, "y": -4.85 },
+					{ "time": 0.2, "x": 0, "y": 0 }
+				]
+			}
+		}
+	},
+	"Jump": {
+		"bones": {
+			"head": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -54.22, "curve": "stepped" },
+					{
+						"time": 0.7667,
+						"x": 0,
+						"y": -54.22,
+						"curve": [ 0.141, 0, 0, 1.1 ]
+					},
+					{ "time": 1.5333, "x": 0, "y": 10.5 }
+				]
+			},
+			"leg2": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{
+						"time": 0.7667,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.07, 1.02 ]
+					},
+					{ "time": 1.5333, "angle": 16.5 }
+				]
+			},
+			"leg1": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{
+						"time": 0.7667,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.07, 1.02 ]
+					},
+					{ "time": 1.5333, "angle": 25.5 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.7667, "name": "Jump" }
+		]
+	},
+	"Walk": {
+		"bones": {
+			"leg2": {
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 },
+					{ "time": 0.3667, "x": 1, "y": 0.738 },
+					{ "time": 0.6667, "x": 1, "y": 1 }
+				]
+			},
+			"leg1": {
+				"scale": [
+					{ "time": 0.5, "x": 1, "y": 1 },
+					{ "time": 0.8667, "x": 1, "y": 0.627 },
+					{ "time": 1.0667, "x": 1, "y": 1 }
+				]
+			},
+			"head": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.4,
+						"angle": -18.6,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.8,
+						"angle": 11.4,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.0667, "angle": 0 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.611, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.2333,
+						"x": 0,
+						"y": -27.89,
+						"curve": [ 0.25, 0, 0.185, 1 ]
+					},
+					{ "time": 0.4333, "x": 0, "y": 0, "curve": "stepped" },
+					{
+						"time": 0.6,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.611, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.8333,
+						"x": 0,
+						"y": -27.89,
+						"curve": [ 0.25, 0, 0.185, 1 ]
+					},
+					{ "time": 1, "x": 0, "y": 0 }
+				]
+			},
+			"root": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.451, 0, 0, 1 ]
+					},
+					{
+						"time": 0.2333,
+						"x": 0,
+						"y": -23.5,
+						"curve": [ 0.451, 0, 0, 1 ]
+					},
+					{
+						"time": 0.5333,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.451, 0, 0, 1 ]
+					},
+					{
+						"time": 0.8333,
+						"x": 0,
+						"y": -23.5,
+						"curve": [ 0.451, 0, 0, 1 ]
+					},
+					{ "time": 1.0667, "x": 0, "y": 0 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0, "name": "WalkOnGround" },
+			{ "time": 0.6667, "name": "WalkOnGround" }
+		]
+	}
+}
+}

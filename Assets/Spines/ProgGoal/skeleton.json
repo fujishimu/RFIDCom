@@ -1,0 +1,128 @@
+{
+"skeleton": { "hash": "L5aun7s4rNDlnFO4IY56e+CkCnA", "spine": "3.6.53", "width": 217.5, "height": 445.9, "images": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "Window1", "parent": "root", "x": 8.57, "y": 114.24 },
+	{ "name": "Window2", "parent": "root", "x": 71.88, "y": 64.49 }
+],
+"slots": [
+	{ "name": "Gate-2", "bone": "Window1", "attachment": "Gate-2" },
+	{ "name": "Gate-3", "bone": "Window2", "attachment": "Gate-3" },
+	{ "name": "Gate-4", "bone": "root", "attachment": "Gate-1" },
+	{ "name": "Gate-1", "bone": "root", "attachment": "Gate-1" }
+],
+"skins": {
+	"default": {
+		"Gate-1": {
+			"Gate-1": { "x": -56.64, "y": 137.21, "width": 37, "height": 341 }
+		},
+		"Gate-2": {
+			"Gate-2": { "width": 115, "height": 330 }
+		},
+		"Gate-3": {
+			"Gate-3": { "width": 120, "height": 365 }
+		},
+		"Gate-4": {
+			"Gate-1": { "x": 123.86, "y": 32.32, "width": 37, "height": 341 }
+		}
+	}
+},
+"animations": {
+	"Idle": {},
+	"LeftOpen": {
+		"slots": {
+			"Gate-3": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "Gate-3" }
+				]
+			},
+			"Gate-4": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "Gate-1" }
+				]
+			}
+		},
+		"bones": {
+			"Window2": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.594, 0.01, 0.75, 1 ]
+					},
+					{ "time": 0.5, "x": 73.94, "y": -49.3 }
+				]
+			},
+			"Window1": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.594, 0.01, 0.75, 1 ]
+					},
+					{ "time": 0.5, "x": -57.83, "y": 35.08 }
+				]
+			}
+		}
+	},
+	"RightOpen": {
+		"slots": {
+			"Gate-1": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "Gate-1" }
+				]
+			},
+			"Gate-2": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" }
+				]
+			},
+			"Gate-3": {
+				"attachment": [
+					{ "time": 0, "name": "Gate-3" }
+				]
+			},
+			"Gate-4": {
+				"attachment": [
+					{ "time": 0, "name": "Gate-1" }
+				]
+			}
+		},
+		"bones": {
+			"Window2": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.594, 0.01, 0.75, 1 ]
+					},
+					{ "time": 0.5, "x": 73.94, "y": -49.3 }
+				]
+			},
+			"Window1": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.594, 0.01, 0.75, 1 ]
+					},
+					{ "time": 0.5, "x": -57.83, "y": 35.08 }
+				]
+			}
+		}
+	}
+}
+}
