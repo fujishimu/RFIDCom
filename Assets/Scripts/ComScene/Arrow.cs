@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Arrow : MonoBehaviour {
-
+	/*
 	GameObject player;
 
 	void Start () {
@@ -23,6 +23,6 @@ public class Arrow : MonoBehaviour {
 		{
 			player.GetComponent<Player> ().SpineState(0);	
 		}
-	}
+	}*/
 
 }
