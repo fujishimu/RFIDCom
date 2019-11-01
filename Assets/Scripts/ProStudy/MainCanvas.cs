@@ -25,10 +25,6 @@ namespace ProStudy {
             clearRect.localPosition = new Vector3(0, 350);
         }
 
-        // Update is called once per frame
-        void Update() {
-
-        }
 
         //初期化, ステージクリアに必要なコイン
         public void Init(int num) {
@@ -47,13 +43,18 @@ namespace ProStudy {
         public void OnRetry() {
             OnIdle();
         }
+        //タイトルへ
+        public void OnTitle() {
+            LoadScene();
+        }
         //Goal後
         public void OnEnd() {
             clearText.enabled = true;
             if (clearRect.localPosition == new Vector3(0, 350, 0))
                 clearRect.DOLocalMoveY(0, 1.0f).SetEase(Ease.OutBounce);
-            startBtnText.text = "タイトルへ";
-            ToggleBtnListener(LoadScene);
+            //startBtnText.text = "タイトルへ";
+            //ToggleBtnListener(LoadScene);
+            
         }
 
         //現在のポイントと必要ポイント

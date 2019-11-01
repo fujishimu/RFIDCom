@@ -10,8 +10,8 @@ namespace ProStudy {
     public class Player : MonoBehaviour {
 
         Vector3 playerInitPos;  //プレイヤーの初期位置
-        float spd = 0.01f;  //横移動速度
-        float downSpd = 0.02f;   //落下速度
+        float spd = 0.03f;  //横移動速度
+        float downSpd = 0.06f;   //落下速度
         float climbSpd = 0.02f; //右斜め前移動速度
         float rayLength = 4.0f; //rayの長さ
         bool isAllowClimb = true;    //右斜め前にジャンプできるか

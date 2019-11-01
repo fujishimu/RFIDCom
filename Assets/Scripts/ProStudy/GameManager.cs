@@ -97,6 +97,10 @@ namespace ProStudy {
             mainScript.IsUpdateScan = false;
         }
 
+        public void Title() {
+            canvas.OnTitle();
+        }
+
         public void AddPoint() {
             currentPoint++;
             canvas.changePoint(currentPoint, stageObjects.CoinList.Count);
@@ -104,7 +108,6 @@ namespace ProStudy {
 
         public void Click() {
             SoundManager.Instance.PlaySE("click");
-            
         }
     }
 }
