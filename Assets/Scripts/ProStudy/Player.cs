@@ -69,7 +69,7 @@ namespace ProStudy {
                 if (rHit.collider != null && rHit.collider.tag == "Wall") {
                     state = PLAYER_STATE.Idle;
                 }
-                //ゴールできないとき
+                //ゴールにぶつかったとき
                 if(rHit.collider != null && rHit.collider.tag == "Goal" && GameManager.instance.CurrentPoint != stageObjects.CoinList.Count) {
                     state = PLAYER_STATE.Idle;
                 }
@@ -80,11 +80,13 @@ namespace ProStudy {
                     isAllowClimb = true;
                 }
                 //上にブロックがあったら飛べない
-                if (uHit.collider != null && uHit.collider.tag == "Wall") {
+                if (uHit.collider != null && uHit.collider.tag == "Wall" && uHit.collider.GetComponent<BreakGround>() == null) {
                     isAllowJump = false;
                 } else {
                     isAllowJump = true;
                 }
+
+                Debug.Log(isAllowClimb);
             }
 
             switch (state) {
@@ -255,6 +257,9 @@ namespace ProStudy {
                     playerAnim.timeScale = 3.0f;
                     playerAnim.state.SetAnimation(0, "Walk", true);
                     //SoundManager.Instance.PlaySE("falling");
+                }
+                if (collision.tag == "Wall" && collision.GetComponent<BreakGround>() != null) {
+                    collision.gameObject.GetComponent<BreakGround>().Break();
                 }
             }
         }

@@ -50,7 +50,7 @@ namespace ProStudy {
             state = STATE.Idle;
 
             SoundManager.Instance.SetBgmVol(0.15f);
-            SoundManager.Instance.PlayBGM("bgm1");
+            //SoundManager.Instance.PlayBGM("bgm1");
         }
 
         void Update() {

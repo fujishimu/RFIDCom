@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ProgStudy/PSStage2.unity
     guid: a5d9b7f9a1e334145915a4b42f294564
+  - enabled: 0
+    path: 
+    guid: c0d86fc5255f58340b3cd904df2b9763
   - enabled: 1
     path: Assets/Scenes/ProgStudy/PSStage3.unity
-    guid: c0d86fc5255f58340b3cd904df2b9763
+    guid: 8363a8afc835c884692de518f5a3397e
