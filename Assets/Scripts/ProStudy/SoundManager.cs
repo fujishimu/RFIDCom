@@ -8,6 +8,8 @@ public class SoundManager : MonoBehaviour {
 
     public static SoundManager Instance;
 
+
+
     GameObject seSoundPlayerObj, bgmSoundPlayerObj;
     AudioSource audioSource;
     AudioSource bgmSource;
@@ -44,7 +46,12 @@ public class SoundManager : MonoBehaviour {
 
 
 	void Awake() {
-		Instance = this;
+        if(Instance == null) {
+            Instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }else {
+         //   Destroy(this.gameObject);
+        }
 
         Object[] _seClips = Resources.LoadAll("SE", typeof(AudioClip));
 		Object[] _bgmClips = Resources.LoadAll("BGM",typeof(AudioClip));

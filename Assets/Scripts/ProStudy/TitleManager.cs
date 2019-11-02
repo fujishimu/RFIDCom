@@ -17,6 +17,7 @@ public class TitleManager : MonoBehaviour {
 
     //シーンのロード
     public void LoadScene(int stageNum) {
+        SoundManager.Instance.PlaySE("click");
         SceneManager.LoadScene("PSStage" + stageNum.ToString());
     }
 }
